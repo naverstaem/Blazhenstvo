@@ -519,6 +519,73 @@ header
   &__video
     margin-top: 24px
     position: relative
+    display: inline-block
+
+
+.recommendations
+  +clr
+  padding: 35px 0
+  background: url(../img/why_bg.png) repeat
+  .recommendations_in
+    @extend %in
+    +clr
+  &__top
+    margin-top: 35px
+    .list--recommendations
+      vertical-align: top
+      width: 45%
+      display: inline-block
+      counter-reset: myCounter
+      li
+        &:before
+          content: counter(myCounter)
+          counter-increment: myCounter
+          +osl
+          font-size: 12px
+          color: #1f1f1f
+          background: none
+          text-align: center
+          width: 26px
+          height: 26px
+          line-height: 26px
+          +border-radius(50%)
+          border: solid 2px #dcdcdc
+          top: -3px
+  &__img
+    width: 290px
+    height: 290px
+    display: inline-block
+    vertical-align: top
+    margin-left: 70px
+    img
+      +border-radius(50%)
+  &__contraindications
+    h3
+      font-family: 'open_sanscondensed_light'
+      font-size: 46px
+      color: #cf3736
+      font-weight: normal
+      span
+        display: inline-block
+        position: relative
+        margin-right: 30px
+        +s(bang-ico)
+        top: 4px
+    .list--contraindications
+      li
+        &:before
+          +s(minus-ico)
+          top: 1px
+
+  &__button
+    text-align: center
+    margin-top: 35px
+
+
+
+
+
+
 
 
 .work
