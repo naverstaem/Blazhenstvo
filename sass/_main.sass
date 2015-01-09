@@ -583,8 +583,56 @@ header
 
 
 
-
-
+.specs
+  padding: 30px 0 50px
+  .specs_in
+    @extend %in
+    +clr
+  &__text
+    display: inline-block
+    vertical-align: top
+    margin-top: 60px
+  &__row
+    +osl
+    font-size: 16px
+    color: #1f1f1f
+    margin-top: 15px
+  &__col1
+    margin-right: 25px
+    margin-left: 50px
+    position: relative
+    display: inline-block
+    +opacity(.5)
+    &.i1
+      +s(specs-ico1)
+    &.i2
+      +s(specs-ico2)
+      top: -7px
+    &.i3
+      +s(specs-ico3)
+    &.i4
+      +s(specs-ico4)
+      top: 3px
+    &.i5
+      +s(specs-ico5)
+      top: 3px
+    &.i6
+      +s(specs-ico6)
+      top: 6px
+  &__col2
+    display: inline-block
+    width: 230px
+  &__col3
+    display: inline-block
+    width: 260px
+  &__img
+    display: inline-block
+    vertical-align: top
+    width: 260px
+    height: 260px
+    margin-top: 60px
+    img
+      +border-radius(50%)
 
 
 
