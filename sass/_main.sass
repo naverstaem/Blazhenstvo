@@ -526,6 +526,7 @@ header
   +clr
   padding: 35px 0
   background: url(../img/why_bg.png) repeat
+  min-width: 960px
   .recommendations_in
     @extend %in
     +clr
@@ -637,115 +638,78 @@ header
 
 
 .work
-  padding-top: 40px
-  overflow: hidden
-  min-width: 1000px
-
+  padding: 40px 0 60px
+  min-width: 960px
+  background: url(../img/work_bg.png)
+  +cover
   .work_in
     @extend %in
     position: relative
-
-  h2
-    line-height: .8em
-    color: #3f3f3f
-    &:after
-      border-bottom: none
-  .work__circles
-    position: absolute
-    top: -600px
-    left: -75px
-    background: url(../img/circles.png) center center no-repeat
-    width: 1154px
-    height: 1154px
-    content: ""
-    .item
-      position: absolute
-      width: 170px
-      text-align: right
-      +rl
+    width: 900px
+  &__items
+    +clr
+    margin-top: 60px
+  &__item
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    width: 220px
+    p
+      padding: 0 40px
+      +osl
       font-size: 16px
-      color: #3f3f3f
-      bottom: 0
-      left: 30px
-      span
-        position: absolute
-        content: ""
-        width: 58px
-        height: 58px
-        background: #c95faf
-        +border-radius(50%)
-        right: -78px
-        top: -5px
-        +box-shadow(rgba(#c95faf,.11) 0 0 0 6px)
-        &:before
-          position: absolute
-          top: 50%
-          left: 50%
-          content: ""
-          +transform(translate(-50%,-50%))
+      color: #1f1f1f
+  &__img
+    display: inline-block
+    width: 120px
+    height: 120px
+    +border-radius(50%)
+    background: #ffffff
+    position: relative
+    margin-bottom: 15px
+    img
+      position: relative
+      top: 50%
+      +transform(translateY(-50%))
+    span
+      position: absolute
+      top: 0
+      left: 0
+      width: 36px
+      height: 36px
+      +border-radius(50%)
+      background: #cf3736
+      color: #ffffff
+      line-height: 36px
+      text-align: center
+      font-size: 16px
+      font-family: 'open_sanssemibold'
 
-    .item1
-      bottom: 440px
-      left: 95px
-      span
-        &:before
-          +s(w-img1)
-
-    .item2
-      bottom: 297px
-      left: 245px
-      span
-        &:before
-          +s(w-img2)
-    .item3
-      text-align: left
-      bottom: 297px
-      left: 735px
-      span
-        left: -78px
-        right: auto
-        &:before
-          +s(w-img3)
-    .item4
-      text-align: left
-      bottom: 440px
-      left: 885px
-      span
-        left: -78px
-        right: auto
-        &:before
-          +s(w-img4)
 
 
 .reviews
   +clr
-  background: url(../img/reviews_bg.png) center center no-repeat
-  +cover
-  padding-top: 70px
-  margin-top: 250px
-  height: 514px
-  +box
-  min-width: 1000px
-
+  padding: 50px 0 70px
   .reviews_in
     @extend %in
-  h2
-    color: white
+    width: 700px
   &__items
     margin-top: 65px
     .item
       display: inline-block
-      width: 307px
+      width: 320px
       margin-right: 35px
+      vertical-align: top
       &:last-child
         margin-right: 0
       .head
         text-align: left
         .image
-          width: 60px
-          height: 60px
+          width: 80px
+          height: 80px
           float: left
-          margin-right: 15px
+          margin-right: 20px
+          margin-bottom: 30px
           position: relative
 
           img
@@ -754,16 +718,16 @@ header
             position: relative
             z-index: 1
         h3
-          font-family: 'calibribold'
-          color: #ffffff
-          font-size: 22px
+          font-family: 'open_sanscondensed_light'
+          color: #000
+          font-size: 24px
           font-weight: normal
-          +text-shadow(0 1px 0 rgba(0,0,0,.15))
+          padding-top: 10px
         h4
-          font-size: 13px
-          color: #dbd9ef
+          font-size: 14px
+          color: #a0a0a0
           font-weight: normal
-          font-family: 'conv_calibril'
+          font-family: 'open_sansregular'
 
       .review
         position: relative
@@ -771,21 +735,23 @@ header
         left: -7px
         text-align: left
         padding: 25px
-        margin-top: 43px
+        min-height: 130px
+        clear: both
         background: #ffffff
         +border-radius(14px)
         width: 100%
-        font-family: 'conv_calibril'
+        font-family: 'open_sansregular'
         font-size: 14px
-        color: #3f3f3f
-        +box-shadow(0 1px 3px rgba(0,0,0,.26), inset 0 -1px 0 #fff)
+        color: #7b7b7b
+        border: solid 1px #dcdcdc
         +box
         &:before
           position: absolute
           content: ""
           +s(review-popup)
-          top: -9px
-          left: 21px
+          top: -12px
+          left: 32px
+
 
 
 .header--bottom
