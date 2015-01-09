@@ -315,20 +315,7 @@ header
       color: #1f1f1f
       font-size: 18px
       padding-top: 20px
-.list
-  padding-left: 40px
-  li
-    +rl
-    position: relative
-    margin-top: 15px
-    span
-      +rb
-    &:before
-      position: absolute
-      content: ""
-      +s(check-ico)
-      top: 2px
-      left: -40px
+
 
 .why
   +clr
@@ -443,6 +430,48 @@ header
     text-align: center
     margin-top: 45px
 
+.list
+  padding-left: 40px
+  li
+    +osl
+    position: relative
+    margin-top: 15px
+    font-size: 16px
+    color: #1f1f1f
+    span
+    &:before
+      position: absolute
+      content: ""
+      +s(check-ico)
+      top: 6px
+      left: -40px
+
+
+.features
+  padding: 50px 0
+  +clr
+  .features_in
+    @extend %in
+    +clr
+  h2
+    padding-bottom: 30px
+  p
+    +osl
+    font-size: 16px
+    color: #1f1f1f
+    margin-bottom: 40px
+  .list--features
+    vertical-align: top
+    width: 45%
+    display: inline-block
+  &__img
+    display: inline-block
+    width: 479px
+    height: 318px
+    margin-top: -20px
+
+
+
 
 
 .instruction
@@ -516,24 +545,7 @@ header
           top: -12px
           font-size: 25px
 
-.features
-  padding-top: 70px
-  padding-bottom: 50px
-  min-width: 1000px
 
-  .features_in
-    @extend %in
-  h2
-    line-height: 1em
-  h3
-    +rb
-    font-size: 23px
-    margin-top: 70px
-    margin-bottom: 25px
-  .list--features
-    vertical-align: top
-    width: 45%
-    display: inline-block
 
 .f-b
   min-width: 1000px
