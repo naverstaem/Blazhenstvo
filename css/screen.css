@@ -36,7 +36,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 14px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 input::placeholder, textarea::placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .why .why_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .why .why_in, .about2 .about2_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
 
 .fancybox-inner { -moz-box-shadow: 0 38px 40px -40px black; -webkit-box-shadow: 0 38px 40px -40px black; box-shadow: 0 38px 40px -40px black; }
 
@@ -169,6 +169,17 @@ header .header__img { position: relative; vertical-align: middle; display: inlin
 .why__img { display: inline-block; vertical-align: bottom; margin-bottom: 20px; padding: 0 25px; }
 .why__img img { width: 320px; height: 320px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .why__button { text-align: center; margin-top: 15px; }
+
+.about2 { *zoom: 1; padding: 45px 0; }
+.about2:after { content: " "; display: table; clear: both; }
+.about2 .about2_in { *zoom: 1; }
+.about2 .about2_in:after { content: " "; display: table; clear: both; }
+.about2 h2 { text-align: center; font-size: 30px; font-family: "open_sanscondensed_light"; font-weight: normal; line-height: 1.2em; }
+.about2__img { margin: 35px auto; width: 650px; height: 459px; }
+.about2__item { padding: 0 80px; margin-top: 30px; }
+.about2__item h3 { font-family: "open_sanscondensed_light"; font-size: 36px; color: #000000; font-weight: normal; }
+.about2__item p { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 18px; color: #1f1f1f; margin-top: 10px; }
+.about2__button { text-align: center; margin-top: 25px; }
 
 .instruction { *zoom: 1; background: url(../img/instruction_bg.png) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 665px; padding-top: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; min-width: 1000px; }
 .instruction:after { content: " "; display: table; clear: both; }
