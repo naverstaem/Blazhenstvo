@@ -783,6 +783,61 @@ header
     margin-top: 60px
 
 
+.present
+  +clr
+  padding: 35px 0 50px
+  .present_in
+    @extend %in
+    width: 1000px
+    border-bottom: solid 1px #dbdbdb
+  h2
+    span
+      position: relative
+      display: inline-block
+      +s(cross-ico)
+      margin-right: 25px
+      top: 3px
+  &__items
+    margin-top: 30px
+  &__item
+    display: inline-block
+    vertical-align: top
+    width: 480px
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+  &__img
+    width: 214px
+    height: 207px
+    float: left
+    margin-right: 10px
+    img
+      display: block
+
+  &__text
+    overflow: hidden
+    padding-top: 35px
+    h3
+      font-family: 'open_sanscondensed_light'
+      font-size: 24px
+      color: #000
+      line-height: 1em
+    p
+      font-family: 'open_sansregular'
+      font-size: 14px
+      color: #7b7b7b
+      margin-top: 15px
+
+  &__button
+    text-align: center
+    margin: 40px 0 55px
+
+
+
+
+
+
+
 .also
   +clr
   padding-top: 180px
