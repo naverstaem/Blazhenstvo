@@ -785,7 +785,7 @@ header
 
 .present
   +clr
-  padding: 35px 0 50px
+  padding: 35px 0 0
   .present_in
     @extend %in
     width: 1000px
@@ -835,48 +835,35 @@ header
 
 
 
-
-
-
 .also
   +clr
-  padding-top: 180px
-  padding-bottom: 90px
+  padding: 40px 0 60px
   .also_in
     @extend %in
-    width: 830px
-  h2
-    line-height: .8
-    color: #3f3f3f
-    &:after
-      border-bottom: none
+
   &__items
-    margin-top: 140px
+    margin-top: 60px
   .item
-    background: url(../img/form_bg--bottom.png) no-repeat
-    height: 586px
-    width: 382px
+    padding: 25px
+    height: 462px
+    width: 280px
     text-align: center
     display: inline-block
     vertical-align: top
     +box
-    margin-right: 60px
+    margin-right: 20px
+    border: solid 1px #dcdcdc
+    +border-radius(10px)
     &:last-child
       margin-right: 0
-      .img
-        margin-top: -56px
     h3
-      font-size: 30px
-      font-family: 'forumregular'
-      color: #ffffff
+      font-size: 24px
+      font-family: 'open_sanscondensed_light'
+      color: #000
       margin: 5px 0 10px
       font-weight: normal
-      +text-shadow(0 1px 0 rgba(0,0,0,.08))
 
-    .wave
-      width: 100%
-      height: 0
-      border-bottom: solid 1px rgba(#fff, .2)
+
     p
       font-size: 29px
       color: #181818
@@ -884,60 +871,51 @@ header
 
 
   .img
-    height: 271px
-    margin-top: -64px
+    height: 123px
     display: inline-block
     margin-bottom: 10px
     img
       display: block
   .price-b
-    margin: 0 0 20px
-    padding: 0 30px
+    margin: 0 0 30px
   .price-old
-    color: #cfe7f7
-    font-size: 30px
-    font-family: 'forumregular'
+    color: #929292
+    font-size: 18px
+    font-family: 'open_sansregular'
+    font-weight: normal
     padding: 0
     background: none
     text-align: right
-    width: 49%
-    +text-shadow(0 1px 0 rgba(0,0,0,.08))
     display: inline-block
-    span
-      font-size: 30px
+    position: relative
+    top: -12px
   .price-new
     @extend .price-old
-    background: none
-    color: #ffffff
     text-align: left
-    font-family: 'forumregular'
-    font-size: 48px
-    span
-      font-size: 42px
+    font-family: 'open_sanssemibold'
+    font-size: 36px
+    top: 0
 
 
 
 
   input
-    width: 328px
-    height: 50px
-    margin-bottom: 14px
-    padding-left: 15px
-    font-size: 15px
-    +border-radius(3px)
-    +background-clip(padding-box)
+    width: 225px
+    height: 34px
+    margin-bottom: 13px
+    padding-left: 20px
+    font-size: 14px
+    line-height: 14px
     background-color: #fff
-    @include box-shadow(inset 1px 2px 0 #86bee4)
-    border: none
-
+    border: 1px solid rgba(29,30,31,.15)
+    +border-radius(7px)
+    +background-clip(padding-box)
     &:focus
       @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
 
 
-  .btn--review
-    font-size: 18px
-    padding: 13px 85px
-    margin-top: 11px
+  .btn--also
+    margin-top: 12px
 
 
 
