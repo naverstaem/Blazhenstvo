@@ -36,7 +36,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 14px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 input::placeholder, textarea::placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .why .why_in, .about2 .about2_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .why .why_in, .about2 .about2_in, .about3 .about3_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
 
 .fancybox-inner { -moz-box-shadow: 0 38px 40px -40px black; -webkit-box-shadow: 0 38px 40px -40px black; box-shadow: 0 38px 40px -40px black; }
 
@@ -158,7 +158,7 @@ header .header__img { position: relative; vertical-align: middle; display: inlin
 .list li span { font-family: "robotobold"; font-weight: normal; font-style: normal; }
 .list li:before { position: absolute; content: ""; background: url('../img/icons-sb95486b836.png') 0 0 no-repeat; width: 22px; height: 22px; top: 2px; left: -40px; }
 
-.why { *zoom: 1; background: url(../img/why_bg.png) repeat; padding: 35px 0; }
+.why { *zoom: 1; background: url(../img/why_bg.png) repeat; padding: 35px 0; min-width: 960px; }
 .why:after { content: " "; display: table; clear: both; }
 .why .why_in { *zoom: 1; }
 .why .why_in:after { content: " "; display: table; clear: both; }
@@ -180,6 +180,16 @@ header .header__img { position: relative; vertical-align: middle; display: inlin
 .about2__item h3 { font-family: "open_sanscondensed_light"; font-size: 36px; color: #000000; font-weight: normal; }
 .about2__item p { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 18px; color: #1f1f1f; margin-top: 10px; }
 .about2__button { text-align: center; margin-top: 25px; }
+
+.about3 { background: url(../img/about3_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 30px 0 60px; min-width: 960px; }
+.about3 .about3_in { *zoom: 1; }
+.about3 .about3_in:after { content: " "; display: table; clear: both; }
+.about3 h2 { margin-bottom: 60px; }
+.about3__img { float: left; margin-right: 30px; }
+.about3__img img { width: 325px; height: 325px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.about3__text { overflow: hidden; font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 16px; color: #1f1f1f; }
+.about3__text p { margin-bottom: 15px; }
+.about3__button { text-align: center; margin-top: 45px; }
 
 .instruction { *zoom: 1; background: url(../img/instruction_bg.png) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 665px; padding-top: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; min-width: 1000px; }
 .instruction:after { content: " "; display: table; clear: both; }
