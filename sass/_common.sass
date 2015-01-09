@@ -101,10 +101,10 @@ body
   position: relative
 input, textarea
   +placeholder
-    font-size: 13px
+    font-size: 14px
     text-transform: none
-    color: #a0a0a0
-    +rl
+    color: #888
+    font-family: 'open_sanssemibold_italic'
 %in
   max-width: 1200px
   width: 960px
@@ -124,7 +124,7 @@ input, textarea
   padding: 8px 17px
   font-size: 14px
   text-decoration: none
-  text-transform: uppercase
+  text-transform: none
   +transition(background, .5s)
   +border-radius(6px)
   +background-clip(padding-box)
@@ -159,41 +159,46 @@ input, textarea
 .counter
   display: inline-block
   vertical-align: middle
-  margin-top: 10px
+  margin-top: 0
   .bl
     float: left
     text-align: center
-    margin: 0 12px
+    margin: 0 5px
     &:last-of-type
       margin-right: 0
     span
-      width: 55px
-      height: 41px
+      width: 59px
+      height: 59px
+      line-height: 57px
       display: inline-block
-      +rm
-      font-size: 28px
-      color: white
+      font-size: 30px
+      color: #626262
       padding-top: 0
-      background: url(../img/counter_bg.png) no-repeat
       position: relative
-      +box-shadow(black 0 5px 12px -4px)
-      &:after
-        position: absolute
-        content: ":"
-        font-size: 26px
-        color: rgb(58,58,58)
-        top: 0
-        right: -16px
-      &.s
-        &:after
-          content: ""
+      border: 1px solid rgba(29,30,31,.15)
+      +border-radius(7px)
+      background: #fff
+      font-family: 'open_sanssemibold'
+      +box
+
+
+      //&:after
+      //  position: absolute
+      //  content: ":"
+      //  font-size: 26px
+      //  color: rgb(58,58,58)
+      //  top: 0
+      //  right: -16px
+      //&.s
+      //  &:after
+      //    content: ""
 
 
     p
-      font-family: 'robotolight'
-      font-size: 13px
-      color: #a0a0a0
-      margin-top: 6px
+      font-family: 'open_sansregular'
+      font-size: 14px
+      color: #3b3b3b
+      margin-top: 10px
 
 
 .form__out
@@ -245,7 +250,7 @@ input, textarea
 
 
 form
-  margin-top: 10px
+  margin-top: 0
   position: relative
   text-align: center
   input
@@ -274,27 +279,6 @@ form
     font-family: 'conv_pfdintextcondpro-regular'
     font-size: 24px
 
-.button
-  +box
-  width: 240px
-  height: 70px
-  color: #ffffff
-  +single-text-shadow
-  display: block
-  margin: 20px auto auto
-  font-family: 'pf_highway_sans_probold'
-  font-size: 30px
-  text-transform: none
-  text-decoration: none
-  +border-radius(4px)
-  +background-clip(padding-box)
-  border: solid 2px #ffffff
-  background: none
-  letter-spacing: 1px
-
-  &:hover
-    +box-shadow(inset 0 0 5px 2px #ffffff)
-// common blocks
 
 
 .button
@@ -321,7 +305,7 @@ form
   color: #ffffff
   font-family: 'conv_pfdintextcondpro-light'
   font-size: 24px
-  text-transform: uppercase
+  text-transform: none
   font-weight: normal
   display: inline-block
   margin: 0 auto auto

@@ -87,38 +87,35 @@ header
   color: #ffffff
   min-width: 960px
 
-
   .header_in
     @extend %in
     +clr
     position: relative
-    .logo
-      display: block
-      position: absolute
-      bottom: -340px
-      width: 3050px
-      left: -115px
-      h1
-        font-family: 'forumregular'
-        font-size: 309px
-        line-height: 1em
-        text-transform: uppercase
 
 
-  .header__left
+  .header__main
+    margin-left: 240px
+    padding-top: 40px
+    +clr
+    position: relative
+  .header__top
     position: relative
     float: left
     z-index: 1
-    width: 550px
     +clr
-    margin-top: 115px
     text-align: left
 
-    h2
-      font-size: 49px
-      font-family: 'forumregular'
+    h1
+      font-size: 46px
+      font-family: 'open_sanscondensed_light'
       line-height: 1.2em
       font-weight: normal
+      color: #000000
+    h2
+      font-size: 29px
+      color: #000
+      font-weight: normal
+      font-family: 'open_sanscondensed_light'
 
     p
       +rl
@@ -126,17 +123,100 @@ header
       margin-top: 25px
 
 
-  .header__right
-    position: absolute
-    top: 0
-    right: -250px
-    background: url(../img/header_img.png) center no-repeat
-    width: 901px
-    height: 916px
 
-
-
-
+  .header__form
+    clear: both
+    position: relative
+    left: 0
+    width: 700px
+    padding-top: 30px
+    .form__header
+      position: relative
+      background: #ffffff
+      font-family: 'open_sansregular'
+      font-size: 18px
+      color: #cf3736
+      text-transform: uppercase
+      padding: 7px 0
+      top: 16px
+      .bline
+        position: relative
+        display: inline-block
+        width: 40px
+        height: 1px
+        background: #cf3736
+        vertical-align: middle
+        margin-right: 15px
+        top: -2px
+      .aline
+        @extend .bline
+        margin-right: 0
+        margin-left: 15px
+    .form__block
+      +clr
+      border: solid 3px #fff
+      +border-radius(10px)
+      +box
+      padding: 30px 30px 15px
+      .block__left
+        display: inline-block
+        vertical-align: middle
+        text-align: left
+        width: 47%
+      .block__form
+        display: inline-block
+        width: 52%
+        vertical-align: middle
+        +clr
+        form
+        input
+          width: 155px
+          height: 34px
+          +background-clip(padding-box)
+          display: inline-block
+          margin-right: 8px
+          border: 1px solid rgba(29,30,31,.15)
+          +border-radius(7px)
+          background: #fff
+          &:last-of-type
+            margin-right: 0
+        .button--form
+          vertical-align: top
+          width: 97%
+          font-family: 'open_sanssemibold_italic'
+          font-size: 14px
+  .header__bottom
+    +clr
+    margin-top: 45px
+    position: relative
+    text-align: left
+  .header__price
+    background: url(../img/header-price_bg.png) no-repeat
+    text-align: center
+    width: 160px
+    height: 159px
+    display: inline-block
+    position: relative
+    +box
+    padding-top: 40px
+    vertical-align: top
+    margin: 15px 45px 0 30px
+    .price--old
+      display: inline-block
+      font-size: 18px
+      color: #f0f1ee
+      +text-shadow(0 2px 0 rgba(29,30,31,.15))
+      font-family: 'open_sansregular'
+    .price--new
+      font-family: 'open_sanssemibold'
+      display: inline-block 
+      font-size: 30px
+      color: #f0f1ee
+      +text-shadow(0 2px 0 rgba(29,30,31,.15))
+  .header__img
+    position: relative
+    vertical-align: middle
+    display: inline-block
 
 .scrollMenu
   //@extend header
@@ -158,104 +238,51 @@ header
 
 
 .intro
-  padding-top: 135px
+  padding: 35px 0
   +clr
-  min-width: 1000px
-
+  min-width: 960px
+  background: url(../img/intro_bg.png)
+  +cover
+  height: 240px
+  +box
   .intro_in
     @extend %in
     +clr
-  &__form
-    +clr
-    background: url(../img/form_bg.png) no-repeat center center
-    width: 1000px
-    height: 256px
-    position: relative
-    left: 0
-    margin-top: -255px
-    .form__img
-      float: left
-      display: inline-block
-      width: 260px
-      height: 248px
-      position: relative
-      top: -23px
-      left: 4px
-      +clr
-      img
-        display: block
-    .form__block
-      float: right
-      padding-right: 35px
-      padding-top: 25px
-      +clr
-      .block__top
-        padding-left: 15px
-        h2
-          display: inline-block
-          vertical-align: middle
-          padding-right: 40px
-          margin-right: 30px
-          border-right: solid 1px rgba(0,0,0,.1)
-          +rb
-          text-transform: uppercase
-          font-size: 32px
-          text-align: right
-          line-height: 1em
-          span
-            font-size: 29px
-            text-transform: none
-            +rl
-      .block__form
-        margin-top: 50px
-        +clr
-        form
-          text-align: left
-
-        input
-          width: 237px
-          height: 47px
-          +border-radius(3px)
-          +background-clip(padding-box)
-          background-color: #fff
-          +box-shadow(inset 1px 2px 0 #86bee4)
-          display: inline-block
-          border: none
-          margin-right: 10px
-        .button--form
-          vertical-align: top
-          padding: 12px 35px
-          +rb
-          font-size: 18px
-
 
 
   &-b
     clear: both
     +clr
     position: relative
-  &__img
-    float: left
-    margin-left: -35px
-    +clr
-    img
-      display: block
+
   &__text
     +clr
-    width: 635px
-    float: right
-    +rl
-    font-size: 14px
-
-    p
-      margin-top: 20px
-      &:last-child
-        margin-top: 0
-      &:first-child
-        margin-top: 60px
-      span
-        font-size: 19px
-        +rb
+    width: 670px
+    +osl
+    font-size: 18px
+    color: #000000
+    margin-left: 100px
+  &__bottom
+    margin-top: 25px
+  &__bottom-text
+    color: #554029
+    font-size: 22px
+    font-family: 'open_sanssemibold'
+    width: 670px
+    margin-left: 100px
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    &:before
+      position: absolute
+      content: ''
+      +s(info-ico)
+      left: -100px
+      top: 0
+  .button--info
+    padding: 8px 35px
+    vertical-align: middle
+    margin-left: 40px
 
 
 .about
