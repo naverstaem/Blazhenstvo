@@ -757,18 +757,32 @@ header
 .header--bottom
   background: url(../img/header--bottom_bg.jpg) center center no-repeat
   +cover
-  height: 629px
+  height: 370px
   position: relative
-  min-width: 1000px
-
-  .header--bottom_in
-    @extend %in
+  min-width: 960px
+  @extend header
+  .header--bottom-h1
+    @extend h1
+    line-height: 1em !important
+    padding-left: 35px
+  &__left
+    float: left
     position: relative
-    height: 100%
-  .intro__form--bottom
-    position: absolute
-    bottom: -135px
-    left: 0
+    margin-left: -155px
+    margin-top: 95px
+    .header__price--bottom
+      position: absolute
+      content: ''
+      top: -50px
+      right: 0
+      z-index: 1
+      margin: 0
+  &__right
+    float: right
+    width: 700px
+    margin-top: 60px
+
+
 .also
   +clr
   padding-top: 180px

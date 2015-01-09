@@ -83,9 +83,9 @@
                     <div class="block__form">
 
                         <form id="form1" action="#" method="post">
-                            <input type="text" name="name" class="name required" placeholder="Ваше имя">
-                            <input type="text" name="phone" class="phone required"
-                                   placeholder="Ваш  телефон">
+                            <input type="text" name="name" class="name required" placeholder="Имя">
+                            <input type="text" name="mail" class="mail required"
+                                   placeholder="Е-мэйл">
                             <button class="btn button--form">Заказать</button>
 
 
@@ -458,51 +458,70 @@
 </div>
 
 <div class="header--bottom">
-    <div class="header--bottom_in">
-        <div class="intro__form intro__form--bottom">
-            <div class="form__img"><img src="img/form_img2.png" alt="img"/></div>
-            <div class="form__block">
-                <div class="block__top">
-                    <h2>Закажи сейчас<br><span>по супер цене!</span></h2>
-                    <div class="counter">
-                        <div class="bl">
-                            <span class="d">00</span>
+    <div class="header_in">
+        <div class="header--bottom__left">
+            <div class="header__price header__price--bottom"><span class="price--old"><s>9 999 р.</s></span>
+                <span class="price--new">9 999 р.</span>
+            </div>
+            <div class="header__img">
+                <img src="img/header--bottom-img.png" alt="image"/>
+            </div>
+        </div>
+        <div class="header--bottom__right">
+            <div class="header__top">
 
-                            <p>Дней</p>
-                        </div>
-                        <div class="bl">
-                            <span class="h">00</span>
+                <h2 class = "header--bottom-h1">Закажите массажёр «БЛАЖЕНСТВО»<br>
+                    по супер цене прямо сейчас!</h2>
 
-                            <p>Часов</p>
-                        </div>
-                        <div class="bl">
-                            <span class="m">00</span>
+            </div>
 
-                            <p>Минут</p>
-                        </div>
-                        <div class="bl">
-                            <span class="s">00</span>
+            <div class="header__form">
+                <div class="form__block">
+                    <div class="block__left">
 
-                            <p>Секунд</p>
+                        <div class="counter">
+                            <div class="bl">
+                                <span class="d">00</span>
+
+                                <p>дней</p>
+                            </div>
+                            <div class="bl">
+                                <span class="h">00</span>
+
+                                <p>часов</p>
+                            </div>
+                            <div class="bl">
+                                <span class="m">00</span>
+
+                                <p>минут</p>
+                            </div>
+                            <div class="bl">
+                                <span class="s">00</span>
+
+                                <p>секунд</p>
+                            </div>
                         </div>
+
                     </div>
+                    <div class="block__form">
 
-                </div>
-                <div class="block__form">
-
-                    <form id="form2" action="#" method="post">
-                        <input type="text" name="name" class="name required" placeholder="Ваше имя">
-                        <input type="text" name="phone" class="phone required"
-                               placeholder="Ваш  телефон">
-                        <button class="btn button--form">заказать</button>
+                        <form id="form5" action="#" method="post">
+                            <input type="text" name="name" class="name required" placeholder="Имя">
+                            <input type="text" name="mail" class="mail required"
+                                   placeholder="Е-мэйл">
+                            <button class="btn button--form">Заказать</button>
 
 
-                    </form>
+                        </form>
 
+                    </div>
                 </div>
             </div>
+
+
+        </div>
     </div>
-</div>
+
 </div>
 
 <div class="also">
@@ -572,7 +591,7 @@
 <div class="callback" id="callback" style="display: none;">
     <h2>Заказать звонок</h2>
 
-    <form action="#" method="post" id="form5">
+    <form action="#" method="post" id="form6">
         <input type="text" name="name" class="name required" placeholder="Ваше имя">
         <input type="text" name="phone" class="phone required" placeholder="Ващ телефон">
         <button class="btn button--callback">заказать товар</button>
