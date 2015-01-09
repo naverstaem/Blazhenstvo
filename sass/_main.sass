@@ -330,57 +330,60 @@ header
       top: 2px
       left: -40px
 
-.components
-  padding-top: 60px
-  padding-bottom: 60px
-  min-width: 1000px
-
-  .components_in
+.why
+  +clr
+  background: url(../img/why_bg.png) repeat
+  padding: 35px 0
+  .why_in
+    +clr
     @extend %in
-  h2
-    margin-bottom: 50px
-  h3
-    +rm
-    font-size: 25px
+  &__block
+  &__item
     text-align: center
-    margin-bottom: 15px
-  h4
-    +rl
-    font-size: 18px
-    text-align: center
+    border: 1px solid rgba(29,30,31,.1)
+    +border-radius(11px)
+    +background-clip(padding-box)
+    background-color: #fff
+    font-family: 'open_sansregular'
+    font-size: 14px
+    color: #484848
+    width: 260px
+    height: 90px
+    display: table
+    margin-top: 45px
+    +box
+    padding: 0 30px
     span
-      +rm
+      display: table-cell
+      vertical-align: middle
+    &.i1, &.i3, &.i5
+      margin-left: 30px
   &__items
-    hr
-      width: 90%
-      height: 0
-      border: none
-      border-bottom: solid 1px rgb(235,235,235)
+    display: inline-block
+    width: 290px
+    vertical-align: top
+    margin-top: 20px
+  &__img
+    display: inline-block
+    vertical-align: bottom
+    margin-bottom: 20px
+    padding: 0 25px
+    img
+      width: 320px
+      height: 320px
+      +border-radius(50%)
+  &__button
+    text-align: center
+    margin-top: 15px
 
-    .item
-      padding-top: 25px
-      .item__img
-        display: inline-block
-        vertical-align: middle
-        margin-right: 0
-        width: 224px
-        height: 174px
-      .item__text
-        display: inline-block
-        width: 770px
-        text-align: left
-        vertical-align: top
-        margin-top: 20px
-        h5
-          +rm
-          font-size: 20px
-        p
-          +rl
-          font-size: 14px
-          color: #4b4b4b
-  .item--right
-    .item__text
-      text-align: right
+
+
+
+
+
+
+
+
 
 .instruction
   +clr

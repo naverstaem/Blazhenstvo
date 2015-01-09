@@ -36,7 +36,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 14px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 input::placeholder, textarea::placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .components .components_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .why .why_in, .instruction .instruction_in, .features .features_in, .f-b .f-b_in, .work .work_in, .reviews .reviews_in, .header--bottom .header--bottom_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
 
 .fancybox-inner { -moz-box-shadow: 0 38px 40px -40px black; -webkit-box-shadow: 0 38px 40px -40px black; box-shadow: 0 38px 40px -40px black; }
 
@@ -45,8 +45,9 @@ input::placeholder, textarea::placeholder { font-size: 14px; text-transform: non
 .btn { display: inline-block; padding: 8px 17px; font-size: 14px; text-decoration: none; text-transform: none; -moz-transition: background, 0.5s; -o-transition: background, 0.5s; -webkit-transition: background, 0.5s; transition: background, 0.5s; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: #cf3735; color: #e5e5e5; font-family: "open_sanssemibold_italic"; -moz-box-shadow: inset 0 -3px 0 rgba(29, 30, 31, 0.18); -webkit-box-shadow: inset 0 -3px 0 rgba(29, 30, 31, 0.18); box-shadow: inset 0 -3px 0 rgba(29, 30, 31, 0.18); }
 .btn:hover { background: #d9605e; -moz-box-shadow: 0 0 0 0; -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
-.title { font-size: 70px; font-family: "forumregular"; line-height: 1.2em; color: #000; text-transform: none; font-weight: normal; position: relative; text-align: center; }
-.title:after { position: absolute; content: ""; width: 96px; border-bottom: solid 4px #c95faf; height: 0; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: -20px; }
+.btn--other { padding: 8px 35px; }
+
+.title { font-size: 46px; font-family: "open_sanscondensed_light"; line-height: 1.2em; color: #000; text-transform: none; font-weight: normal; position: relative; text-align: center; }
 
 .counter { display: inline-block; vertical-align: middle; margin-top: 0; }
 .counter .bl { float: left; text-align: center; margin: 0 5px; }
@@ -157,18 +158,17 @@ header .header__img { position: relative; vertical-align: middle; display: inlin
 .list li span { font-family: "robotobold"; font-weight: normal; font-style: normal; }
 .list li:before { position: absolute; content: ""; background: url('../img/icons-sb95486b836.png') 0 0 no-repeat; width: 22px; height: 22px; top: 2px; left: -40px; }
 
-.components { padding-top: 60px; padding-bottom: 60px; min-width: 1000px; }
-.components h2 { margin-bottom: 50px; }
-.components h3 { font-family: "robotomedium"; font-weight: normal; font-style: normal; font-size: 25px; text-align: center; margin-bottom: 15px; }
-.components h4 { font-family: "robotolight"; font-weight: normal; font-style: normal; font-size: 18px; text-align: center; }
-.components h4 span { font-family: "robotomedium"; font-weight: normal; font-style: normal; }
-.components__items hr { width: 90%; height: 0; border: none; border-bottom: solid 1px #ebebeb; }
-.components__items .item { padding-top: 25px; }
-.components__items .item .item__img { display: inline-block; vertical-align: middle; margin-right: 0; width: 224px; height: 174px; }
-.components__items .item .item__text { display: inline-block; width: 770px; text-align: left; vertical-align: top; margin-top: 20px; }
-.components__items .item .item__text h5 { font-family: "robotomedium"; font-weight: normal; font-style: normal; font-size: 20px; }
-.components__items .item .item__text p { font-family: "robotolight"; font-weight: normal; font-style: normal; font-size: 14px; color: #4b4b4b; }
-.components .item--right .item__text { text-align: right; }
+.why { *zoom: 1; background: url(../img/why_bg.png) repeat; padding: 35px 0; }
+.why:after { content: " "; display: table; clear: both; }
+.why .why_in { *zoom: 1; }
+.why .why_in:after { content: " "; display: table; clear: both; }
+.why__item { text-align: center; border: 1px solid rgba(29, 30, 31, 0.1); -moz-border-radius: 11px; -webkit-border-radius: 11px; border-radius: 11px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; font-family: "open_sansregular"; font-size: 14px; color: #484848; width: 260px; height: 90px; display: table; margin-top: 45px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 30px; }
+.why__item span { display: table-cell; vertical-align: middle; }
+.why__item.i1, .why__item.i3, .why__item.i5 { margin-left: 30px; }
+.why__items { display: inline-block; width: 290px; vertical-align: top; margin-top: 20px; }
+.why__img { display: inline-block; vertical-align: bottom; margin-bottom: 20px; padding: 0 25px; }
+.why__img img { width: 320px; height: 320px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.why__button { text-align: center; margin-top: 15px; }
 
 .instruction { *zoom: 1; background: url(../img/instruction_bg.png) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 665px; padding-top: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; min-width: 1000px; }
 .instruction:after { content: " "; display: table; clear: both; }
