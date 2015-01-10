@@ -36,7 +36,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 14px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 input::placeholder, textarea::placeholder { font-size: 14px; text-transform: none; color: #888; font-family: "open_sanssemibold_italic"; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .header--bottom .header_in, .intro .intro_in, .about .about_in, .why .why_in, .about2 .about2_in, .about3 .about3_in, .features .features_in, .instruction .instruction_in, .recommendations .recommendations_in, .specs .specs_in, .work .work_in, .reviews .reviews_in, .present .present_in, .also .also_in, footer .footer_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .header--bottom .header_in, .intro .intro_in, .about .about_in, .why .why_in, .about2 .about2_in, .about3 .about3_in, .features .features_in, .instruction .instruction_in, .recommendations .recommendations_in, .specs .specs_in, .work .work_in, .reviews .reviews_in, .present .present_in, .also .also_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
 
 .fancybox-inner { -moz-box-shadow: 0 38px 40px -40px black; -webkit-box-shadow: 0 38px 40px -40px black; box-shadow: 0 38px 40px -40px black; }
 
@@ -302,11 +302,11 @@ header .header__img, .header--bottom .header__img { position: relative; vertical
 .also input:focus { -moz-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
 .also .btn--also { margin-top: 12px; }
 
-footer { box-sizing: border-box; background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 118px; padding-top: 40px; font-size: 14px; color: #cdcdd5; min-width: 1000px; }
-footer .footer__left { float: left; text-align: left; }
-footer .footer__left a { display: block; font-family: "robotolight"; font-weight: normal; font-style: normal; color: #cdcdd5; text-decoration: none; }
-footer .footer__left a:hover { text-decoration: underline; }
-footer .footer__right { float: right; text-align: right; }
+footer { background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 35px 0; font-size: 14px; position: relative; color: #554029; font-family: "open_sansregular"; text-align: center; }
+footer .footer__top a { display: inline-block; color: #cf3736; text-decoration: underline; }
+footer .footer__top a:hover { text-decoration: none; }
+footer .footer__bottom { font-family: "open_sansregular"; margin-top: 14px; color: #554029; text-transform: none; }
+footer .footer__bottom span { margin-left: 10px; }
 
 .callback { width: 382px; background: url(../img/popup-order_bg.png) center center no-repeat; height: 335px; padding: 20px 25px 35px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; }
 .callback h2 { font-family: "forumregular"; font-size: 48px; color: #ffffff; font-weight: normal; }

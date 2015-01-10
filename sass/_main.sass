@@ -927,30 +927,28 @@ header
 
 
 footer
-  box-sizing: border-box
   background: url(../img/footer_bg.png)
   +cover
-  height: 118px
-  padding-top: 40px
+  padding: 35px 0
   font-size: 14px
-  color: #cdcdd5
-  min-width: 1000px
-
-  .footer_in
-    @extend %in
-  .footer__left
-    float: left
-    text-align: left
+  position: relative
+  color: #554029
+  font-family: 'open_sansregular'
+  text-align: center
+  .footer__top
     a
-      display: block
-      +rl
-      color: #cdcdd5
-      text-decoration: none
+      display: inline-block
+      color: #cf3736
+      text-decoration: underline
       &:hover
-        text-decoration: underline
-  .footer__right
-    float: right
-    text-align: right
+        text-decoration: none
+  .footer__bottom
+    font-family: 'open_sansregular'
+    margin-top: 14px
+    color: #554029
+    text-transform: none
+    span
+      margin-left: 10px
 
 
 //=============================================
