@@ -1,0 +1,1004 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background: transparent
+  +cover
+  height: 50px
+  min-width: 1000px
+  .top_in
+    @extend %in
+    +clr
+    position: relative
+    padding-top: 18px
+
+  nav
+    float: left
+
+    ul
+      font-size: 13px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        margin-right: 10px
+        font-family: 'open_sansregular'
+        color: #484848
+        line-height: 1em
+        text-transform: uppercase
+        &:last-child
+          border: none
+          a
+            margin-right: 0
+        &:first-child
+          a
+            margin-left: 0
+        a
+          text-decoration: none
+          color: inherit
+          border-bottom: solid 1px rgba(#fff, .0)
+          margin: 0 15px
+          +transition(background, .1s)
+
+          &:hover, &.is-active
+            border-bottom: solid 1px
+
+
+  &__right
+    float: right
+    margin-top: -12px
+  &__after-phone
+    display: inline-block
+    vertical-align: middle
+    margin-left: 30px
+  &__phone
+    +clr
+    margin-left: 30px
+    font-family: 'open_sanssemibold'
+    font-size: 15px
+    color: #484848
+    display: inline-block
+    vertical-align: middle
+    i
+      position: relative
+      display: inline-block
+      +s(phone-ico)
+      top: -2px
+      vertical-align: middle
+      margin-right: 10px
+
+  &__nomenclature
+    display: inline-block
+    vertical-align: middle
+    color: #484848
+    font-size: 13px
+    font-family: 'open_sansitalic'
+  .callme
+
+
+
+header
+  background: url(../img/header_bg.jpg) center center no-repeat
+  +cover
+  height: 660px
+  position: relative
+  +box
+  text-align: center
+  color: #ffffff
+  min-width: 1000px
+
+  .header_in
+    @extend %in
+    +clr
+    position: relative
+
+
+  .header__main
+    margin-left: 240px
+    padding-top: 40px
+    +clr
+    position: relative
+  .header__top
+    position: relative
+    float: left
+    z-index: 1
+    +clr
+    text-align: left
+
+    h1
+      font-size: 46px
+      font-family: 'open_sanscondensed_light'
+      line-height: 1.2em
+      font-weight: normal
+      color: #000000
+    h2
+      font-size: 29px
+      color: #000
+      font-weight: normal
+      font-family: 'open_sanscondensed_light'
+
+    p
+      font-size: 18px
+      margin-top: 25px
+
+
+  .header__form
+    clear: both
+    position: relative
+    left: 0
+    width: 700px
+    padding-top: 30px
+    .form__header
+      position: relative
+      background: #ffffff
+      font-family: 'open_sansregular'
+      font-size: 18px
+      color: #cf3736
+      text-transform: uppercase
+      padding: 7px 0
+      top: 16px
+      .bline
+        position: relative
+        display: inline-block
+        width: 40px
+        height: 1px
+        background: #cf3736
+        vertical-align: middle
+        margin-right: 15px
+        top: -2px
+      .aline
+        @extend .bline
+        margin-right: 0
+        margin-left: 15px
+    .form__block
+      +clr
+      border: solid 3px #fff
+      +border-radius(10px)
+      +box
+      padding: 30px 30px 15px
+      .block__left
+        display: inline-block
+        vertical-align: middle
+        text-align: left
+        width: 47%
+      .block__form
+        display: inline-block
+        width: 52%
+        vertical-align: middle
+        +clr
+        form
+        input
+          width: 155px
+          height: 34px
+          +background-clip(padding-box)
+          display: inline-block
+          margin-right: 8px
+          border: 1px solid rgba(29,30,31,.15)
+          +border-radius(7px)
+          background: #fff
+          &:last-of-type
+            margin-right: 0
+        .button--form
+          vertical-align: top
+          width: 97%
+          font-family: 'open_sanssemibold_italic'
+          font-size: 14px
+  .header__bottom
+    +clr
+    margin-top: 45px
+    position: relative
+    text-align: left
+  .header__price
+    background: url(../img/header-price_bg.png) no-repeat
+    text-align: center
+    width: 160px
+    height: 159px
+    display: inline-block
+    position: relative
+    +box
+    padding-top: 40px
+    vertical-align: top
+    margin: 15px 45px 0 30px
+    .price--old
+      display: inline-block
+      font-size: 18px
+      color: #f0f1ee
+      +text-shadow(0 2px 0 rgba(29,30,31,.15))
+      font-family: 'open_sansregular'
+    .price--new
+      font-family: 'open_sanssemibold'
+      display: inline-block 
+      font-size: 30px
+      color: #f0f1ee
+      +text-shadow(0 2px 0 rgba(29,30,31,.15))
+  .header__img
+    position: relative
+    vertical-align: middle
+    display: inline-block
+
+.scrollMenu
+  //@extend header
+  @extend .top
+  .top_in
+    padding-top: 20px
+  position: fixed
+  z-index: 999
+  width: 100%
+  top: 0
+  left: 0
+  bottom: auto
+  display: none
+  height: 60px
+  +box
+  background: rgba(255,255,255, 0.8)
+  .top
+    height: 0
+
+
+.intro
+  padding: 35px 0
+  +clr
+  min-width: 1000px
+  background: url(../img/intro_bg.png)
+  +cover
+  height: 240px
+  +box
+  .intro_in
+    @extend %in
+    +clr
+
+
+  &-b
+    clear: both
+    +clr
+    position: relative
+
+  &__text
+    +clr
+    width: 670px
+    +osl
+    font-size: 18px
+    color: #000000
+    margin-left: 100px
+  &__bottom
+    margin-top: 25px
+  &__bottom-text
+    color: #554029
+    font-size: 22px
+    font-family: 'open_sanssemibold'
+    width: 670px
+    margin-left: 100px
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    &:before
+      position: absolute
+      content: ''
+      +s(info-ico)
+      left: -100px
+      top: 0
+  .button--info
+    padding: 8px 35px
+    vertical-align: middle
+    margin-left: 40px
+
+
+.about
+  +clr
+  padding: 35px 0
+  +box
+  min-width: 960px
+
+  .about_in
+    @extend %in
+    position: relative
+    +clr
+
+  .about__img
+    width: 200px
+    height: 200px
+    float: left
+    margin-right: 45px
+    margin-left: 100px
+    img
+      +border-radius(50%)
+
+
+  .about__text
+    vertical-align: top
+    position: relative
+    overflow: hidden
+    p
+      +osl
+      color: #1f1f1f
+      font-size: 18px
+      padding-top: 20px
+
+
+.why
+  +clr
+  background: url(../img/why_bg.png) repeat
+  padding: 35px 0
+  min-width: 1000px
+  .why_in
+    +clr
+    @extend %in
+  &__block
+  &__item
+    text-align: center
+    border: 1px solid rgba(29,30,31,.1)
+    +border-radius(11px)
+    +background-clip(padding-box)
+    background-color: #fff
+    font-family: 'open_sansregular'
+    font-size: 14px
+    color: #484848
+    width: 260px
+    height: 90px
+    display: table
+    margin-top: 45px
+    +box
+    padding: 0 30px
+    span
+      display: table-cell
+      vertical-align: middle
+    &.i1, &.i3, &.i5
+      margin-left: 30px
+  &__items
+    display: inline-block
+    width: 290px
+    vertical-align: top
+    margin-top: 20px
+  &__img
+    display: inline-block
+    vertical-align: bottom
+    margin-bottom: 20px
+    padding: 0 25px
+    img
+      width: 320px
+      height: 320px
+      +border-radius(50%)
+  &__button
+    text-align: center
+    margin-top: 15px
+
+
+.about2
+  +clr
+  padding: 45px 0
+  .about2_in
+    @extend %in
+    +clr
+  h2
+    text-align: center
+    font-size: 30px
+    font-family: 'open_sanscondensed_light'
+    font-weight: normal
+    line-height: 1.2em
+  &__img
+    margin: 35px auto
+    width: 650px
+    height: 459px
+  &__item
+    padding: 0 80px
+    margin-top: 30px
+    h3
+      font-family: 'open_sanscondensed_light'
+      font-size: 36px
+      color: #000000
+      font-weight: normal
+    p
+      +osl
+      font-size: 18px
+      color: #1f1f1f
+      margin-top: 10px
+  &__button
+    text-align: center
+    margin-top: 25px
+
+
+
+.about3
+  background: url(../img/about3_bg.png)
+  +cover
+  padding: 30px 0 60px
+  min-width: 1000px
+  .about3_in
+    @extend %in
+    +clr
+  h2
+    margin-bottom: 60px
+  &__img
+    float: left
+    margin-right: 30px
+    img
+      width: 325px
+      height: 325px
+      +border-radius(50%)
+
+  &__text
+    overflow: hidden
+    +osl
+    font-size: 16px
+    color: #1f1f1f
+    p
+      margin-bottom: 15px
+
+  &__button
+    text-align: center
+    margin-top: 45px
+
+.list
+  padding-left: 40px
+  li
+    +osl
+    position: relative
+    margin-top: 15px
+    font-size: 16px
+    color: #1f1f1f
+    span
+    &:before
+      position: absolute
+      content: ""
+      +s(check-ico)
+      top: 6px
+      left: -40px
+
+
+.features
+  padding: 50px 0
+  +clr
+  .features_in
+    @extend %in
+    +clr
+  h2
+    padding-bottom: 30px
+
+  p
+    +osl
+    font-size: 16px
+    color: #1f1f1f
+    margin-bottom: 40px
+  .list--features
+    vertical-align: top
+    width: 45%
+    display: inline-block
+  &__img
+    display: inline-block
+    width: 479px
+    height: 318px
+    margin-top: -20px
+
+
+
+
+
+.instruction
+  +clr
+  +box
+  padding-bottom: 70px
+  .instruction_in
+    +clr
+    @extend %in
+  h2
+    text-align: left
+    margin-bottom: 50px
+  &__text
+    width: 45%
+    display: inline-block
+    vertical-align: top
+    .list--instruction
+      counter-reset: myCounter
+      li
+        &:before
+          content: counter(myCounter)
+          counter-increment: myCounter
+          +osl
+          font-size: 12px
+          color: #1f1f1f
+          background: none
+          text-align: center
+          width: 26px
+          height: 26px
+          line-height: 26px
+          +border-radius(50%)
+          border: solid 2px #dcdcdc
+          top: -3px
+  &__button
+    text-align: center
+    margin-top: 35px
+  &__img
+    background: url(../img/instruction-img.jpg) no-repeat
+    display: inline-block
+    width: 521px
+    height: 422px
+    margin-top: 20px
+    text-align: center
+  &__video
+    margin-top: 24px
+    position: relative
+    display: inline-block
+
+
+.recommendations
+  +clr
+  padding: 35px 0
+  background: url(../img/why_bg.png) repeat
+  min-width: 1000px
+  .recommendations_in
+    @extend %in
+    +clr
+  &__top
+    margin-top: 35px
+    .list--recommendations
+      vertical-align: top
+      width: 45%
+      display: inline-block
+      counter-reset: myCounter
+      li
+        &:before
+          content: counter(myCounter)
+          counter-increment: myCounter
+          +osl
+          font-size: 12px
+          color: #1f1f1f
+          background: none
+          text-align: center
+          width: 26px
+          height: 26px
+          line-height: 26px
+          +border-radius(50%)
+          border: solid 2px #dcdcdc
+          top: -3px
+  &__img
+    width: 290px
+    height: 290px
+    display: inline-block
+    vertical-align: top
+    margin-left: 70px
+    img
+      +border-radius(50%)
+  &__contraindications
+    h3
+      font-family: 'open_sanscondensed_light'
+      font-size: 46px
+      color: #cf3736
+      font-weight: normal
+      span
+        display: inline-block
+        position: relative
+        margin-right: 30px
+        +s(bang-ico)
+        top: 4px
+    .list--contraindications
+      li
+        &:before
+          +s(minus-ico)
+          top: 1px
+
+  &__button
+    text-align: center
+    margin-top: 35px
+
+
+
+.specs
+  padding: 30px 0 50px
+  .specs_in
+    @extend %in
+    +clr
+  &__text
+    display: inline-block
+    vertical-align: top
+    margin-top: 60px
+  &__row
+    +osl
+    font-size: 16px
+    color: #1f1f1f
+    margin-top: 15px
+  &__col1
+    margin-right: 25px
+    margin-left: 50px
+    position: relative
+    display: inline-block
+    +opacity(.5)
+    &.i1
+      +s(specs-ico1)
+    &.i2
+      +s(specs-ico2)
+      top: -7px
+    &.i3
+      +s(specs-ico3)
+    &.i4
+      +s(specs-ico4)
+      top: 3px
+    &.i5
+      +s(specs-ico5)
+      top: 3px
+    &.i6
+      +s(specs-ico6)
+      top: 6px
+  &__col2
+    display: inline-block
+    width: 230px
+  &__col3
+    display: inline-block
+    width: 260px
+  &__img
+    display: inline-block
+    vertical-align: top
+    width: 260px
+    height: 260px
+    margin-top: 60px
+    img
+      +border-radius(50%)
+
+
+
+.work
+  padding: 40px 0 60px
+  min-width: 1000px
+  background: url(../img/work_bg.png)
+  +cover
+  .work_in
+    @extend %in
+    position: relative
+    width: 900px
+  &__items
+    +clr
+    margin-top: 60px
+  &__item
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    width: 220px
+    p
+      padding: 0 40px
+      +osl
+      font-size: 16px
+      color: #1f1f1f
+  &__img
+    display: inline-block
+    width: 120px
+    height: 120px
+    +border-radius(50%)
+    background: #ffffff
+    position: relative
+    margin-bottom: 15px
+    img
+      position: relative
+      top: 50%
+      +transform(translateY(-50%))
+    span
+      position: absolute
+      top: 0
+      left: 0
+      width: 36px
+      height: 36px
+      +border-radius(50%)
+      background: #cf3736
+      color: #ffffff
+      line-height: 36px
+      text-align: center
+      font-size: 16px
+      font-family: 'open_sanssemibold'
+
+
+
+.reviews
+  +clr
+  padding: 50px 0 70px
+  .reviews_in
+    @extend %in
+    width: 700px
+  &__items
+    margin-top: 65px
+    .item
+      display: inline-block
+      width: 320px
+      margin-right: 35px
+      vertical-align: top
+      &:last-child
+        margin-right: 0
+      .head
+        text-align: left
+        .image
+          width: 80px
+          height: 80px
+          float: left
+          margin-right: 20px
+          margin-bottom: 30px
+          position: relative
+
+          img
+            display: block
+            +border-radius(50%)
+            position: relative
+            z-index: 1
+        h3
+          font-family: 'open_sanscondensed_light'
+          color: #000
+          font-size: 24px
+          font-weight: normal
+          padding-top: 10px
+        h4
+          font-size: 14px
+          color: #a0a0a0
+          font-weight: normal
+          font-family: 'open_sansregular'
+
+      .review
+        position: relative
+        top: -7px
+        left: -7px
+        text-align: left
+        padding: 25px
+        min-height: 130px
+        clear: both
+        background: #ffffff
+        +border-radius(14px)
+        width: 100%
+        font-family: 'open_sansregular'
+        font-size: 14px
+        color: #7b7b7b
+        border: solid 1px #dcdcdc
+        +box
+        &:before
+          position: absolute
+          content: ""
+          +s(review-popup)
+          top: -12px
+          left: 32px
+
+
+
+.header--bottom
+  background: url(../img/header--bottom_bg.jpg) center center no-repeat
+  +cover
+  height: 370px
+  position: relative
+  min-width: 1000px
+  @extend header
+  .header--bottom-h1
+    @extend h1
+    line-height: 1em !important
+    padding-left: 35px
+  &__left
+    float: left
+    position: relative
+    margin-left: -155px
+    margin-top: 95px
+    .header__price--bottom
+      position: absolute
+      content: ''
+      top: -50px
+      right: 0
+      z-index: 1
+      margin: 0
+  &__right
+    float: right
+    width: 700px
+    margin-top: 60px
+
+
+.present
+  +clr
+  padding: 35px 0 0
+  .present_in
+    @extend %in
+    width: 1000px
+    border-bottom: solid 1px #dbdbdb
+  h2
+    span
+      position: relative
+      display: inline-block
+      +s(cross-ico)
+      margin-right: 25px
+      top: 3px
+  &__items
+    margin-top: 30px
+  &__item
+    display: inline-block
+    vertical-align: top
+    width: 480px
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+  &__img
+    width: 214px
+    height: 207px
+    float: left
+    margin-right: 10px
+    img
+      display: block
+
+  &__text
+    overflow: hidden
+    padding-top: 35px
+    h3
+      font-family: 'open_sanscondensed_light'
+      font-size: 24px
+      color: #000
+      line-height: 1em
+    p
+      font-family: 'open_sansregular'
+      font-size: 14px
+      color: #7b7b7b
+      margin-top: 15px
+
+  &__button
+    text-align: center
+    margin: 40px 0 55px
+
+
+
+
+.also
+  +clr
+  padding: 40px 0 60px
+  .also_in
+    @extend %in
+
+  &__items
+    margin-top: 60px
+  .item
+    padding: 25px
+    height: 462px
+    width: 280px
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    +box
+    margin-right: 20px
+    border: solid 1px #dcdcdc
+    +border-radius(10px)
+    &:last-child
+      margin-right: 0
+    h3
+      font-size: 24px
+      font-family: 'open_sanscondensed_light'
+      color: #000
+      margin: 5px 0 10px
+      font-weight: normal
+
+
+    p
+      font-size: 29px
+      color: #181818
+      text-transform: uppercase
+
+
+  .img
+    height: 123px
+    display: inline-block
+    margin-bottom: 10px
+    img
+      display: block
+  .price-b
+    margin: 0 0 30px
+  .price-old
+    color: #929292
+    font-size: 18px
+    font-family: 'open_sansregular'
+    font-weight: normal
+    padding: 0
+    background: none
+    text-align: right
+    display: inline-block
+    position: relative
+    top: -12px
+  .price-new
+    @extend .price-old
+    text-align: left
+    font-family: 'open_sanssemibold'
+    font-size: 36px
+    top: 0
+
+
+
+
+  input
+    width: 225px
+    height: 34px
+    margin-bottom: 13px
+    padding-left: 20px
+    font-size: 14px
+    line-height: 14px
+    background-color: #fff
+    border: 1px solid rgba(29,30,31,.15)
+    +border-radius(7px)
+    +background-clip(padding-box)
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+  .btn--also
+    margin-top: 12px
+
+
+
+
+
+
+
+
+
+
+footer
+  background: url(../img/footer_bg.png)
+  +cover
+  padding: 35px 0
+  font-size: 14px
+  position: relative
+  color: #554029
+  font-family: 'open_sansregular'
+  text-align: center
+  min-width: 1000px
+  .footer__top
+    a
+      display: inline-block
+      color: #cf3736
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .footer__bottom
+    font-family: 'open_sansregular'
+    margin-top: 14px
+    color: #554029
+    text-transform: none
+    span
+      margin-left: 10px
+
+
+//=============================================
+//popup forms
+//=============================================
+
+.callback
+  width: 390px
+  padding: 40px 55px 45px
+  +box
+  text-align: center
+  +border-radius(10px)
+  +background-clip(padding-box)
+  background-color: #fff
+
+  h2
+    +osl
+    font-size: 20px
+    color: #343837
+    font-weight: normal
+  form
+    margin-top: 25px
+    input
+      width: 275px
+      height: 34px
+      margin-bottom: 13px
+      padding-left: 20px
+      font-size: 14px
+      line-height: 14px
+      background-color: #fff
+      border: 1px solid rgba(29,30,31,.15)
+      +border-radius(7px)
+      +background-clip(padding-box)
+      &:focus
+        @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+    .button--callback
+      margin-top: 12px
+      width: 100%
+
+.thanks
+  text-align: center
+  +border-radius(10px)
+  +background-clip(padding-box)
+  width: 650px
+  +box
+  +clr
+  background: #ffffff
+  padding: 65px 0 75px
+  h2
+    +osl
+    font-size: 20px
+    color: #343837
+    font-weight: normal
