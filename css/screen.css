@@ -315,9 +315,6 @@ footer .footer__bottom span { margin-left: 10px; }
 .callback form input:focus { -moz-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
 .callback form .button--callback { margin-top: 12px; width: 100%; }
 
-.thanks { text-align: center; background: url(../img/popup-thanks_bg.png) center center no-repeat; width: 422px; height: 390px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; font-family: "forumregular"; color: #ffffff; }
+.thanks { text-align: center; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; width: 650px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; background: #ffffff; padding: 65px 0 75px; }
 .thanks:after { content: " "; display: table; clear: both; }
-.thanks__img { margin-top: 30px; margin-bottom: 15px; display: inline-block; position: relative; width: 154px; height: 154px; }
-.thanks h2 { font-weight: normal; font-size: 60px; line-height: 1em; }
-.thanks h3 { font-weight: normal; font-size: 37px; line-height: 1em; margin-bottom: 8px; }
-.thanks h4 { font-weight: normal; font-size: 23px; line-height: 1.2em; padding: 0 40px; }
+.thanks h2 { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 20px; color: #343837; font-weight: normal; }
